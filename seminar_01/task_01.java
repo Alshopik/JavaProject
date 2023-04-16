@@ -19,7 +19,7 @@ public class task_01 {
         for (int i = 2; i <= n; i++) {
             fact = fact * i;
         }
-        System.out.print("Факториал (произведение чисел от 1 до n) = ");
+        System.out.print("Факториал! (произведение чисел от 1 до n) = ");
         System.out.print(fact);
     }
 }
