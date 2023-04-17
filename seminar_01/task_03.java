@@ -37,6 +37,8 @@ public class task_03 {
                 result = number1 / number2;
                 break;
         }
-        System.out.printf("Ответ: %s\n", result);
+        //System.out.printf("Ответ: %s\n", result);
+        System.out.print("\nОтвет:\n");
+        System.out.printf(number1 + " " + operator + " " + number2 + " = " + result);
     }
 }
