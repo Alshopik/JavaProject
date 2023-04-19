@@ -7,6 +7,7 @@ package seminar_01;
 // Ответ: 13
 
 import java.util.Scanner;
+import java.io.FileWriter;
 
 public class task_03 {
     public static void main(String[] args) {
@@ -38,7 +39,18 @@ public class task_03 {
                 break;
         }
         //System.out.printf("Ответ: %s\n", result);
+        
         System.out.print("\nОтвет:\n");
         System.out.printf(number1 + " " + operator + " " + number2 + " = " + result);
+        writeLog(number1 + " " + operator + " " + number2 + " = " + result);
+    }
+    private static void writeLog(String message) {
+        try {
+            FileWriter writer = new FileWriter("logTask_01.txt", true);
+            writer.write(message + "\n");
+            writer.close();
+        } catch (Exception e) {
+            System.out.println("Ошибка записи в лог-файл");
+        }
     }
 }
